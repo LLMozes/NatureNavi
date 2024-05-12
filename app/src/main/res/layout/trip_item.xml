@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="17dp"
+    app:cardElevation="30dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="403dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tripImage"
+            android:layout_width="393dp"
+            android:layout_height="196dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/trip_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tripPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:text="Ár:"
+            app:layout_constraintBottom_toBottomOf="@+id/tripPriceTextNumber"
+            app:layout_constraintEnd_toStartOf="@+id/tripPriceTextNumber"
+            app:layout_constraintHorizontal_bias="0.557"
+            app:layout_constraintTop_toTopOf="@+id/tripPriceTextNumber"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tripPriceTextNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="80dp"
+            android:text="60.000Ft"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tripNameText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tripNameText"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tripNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Malajzia"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripImage" />
+
+        <TextView
+            android:id="@+id/kezdetDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Kirándulás kezdete - vége:"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tripNameText"
+            app:layout_constraintTop_toBottomOf="@id/tripNameText" />
+
+        <TextView
+            android:id="@+id/startDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="2024.06.17"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/kezdetDateTextView"
+            app:layout_constraintTop_toTopOf="@id/kezdetDateTextView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/kotojel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="9dp"
+            android:text="-"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/finishDateText"
+            app:layout_constraintStart_toEndOf="@+id/startDateText"
+            app:layout_constraintStart_toStartOf="@+id/startDateText"
+            app:layout_constraintTop_toTopOf="@+id/kezdetDateTextView" />
+
+        <TextView
+            android:id="@+id/finishDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024.06.24"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toEndOf="@+id/startDateText"
+            app:layout_constraintTop_toTopOf="@+id/kezdetDateTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
