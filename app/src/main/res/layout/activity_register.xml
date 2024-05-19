@@ -71,7 +71,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
-                    android:backgroundTint="#000000"
                     android:textColor="@color/my_primary" />
 
             <View
@@ -95,7 +94,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
-                    android:backgroundTint="#000000"
                     android:textColor="@color/my_primary"
                     android:contentDescription="Email cím beviteli mező"/>
 
@@ -133,7 +131,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:backgroundTint="#000000"
                 android:textColor="@color/my_primary"
                 android:contentDescription="Jelszó beviteli mező"/>
 
@@ -170,7 +167,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:backgroundTint="#000000"
                 android:textColor="@color/my_primary"
                 android:contentDescription="Jelszó beviteli mező"/>
 
@@ -207,11 +203,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
-                android:backgroundTint="#000000"
                 android:textColorHint="@color/material_dynamic_neutral20"
                 android:hint="példa:06703330533"
-                android:textColor="@color/my_primary"
-                android:contentDescription="Telefonszám beviteli mező"/>
+                android:textColor="@color/my_primary" />
 
                 <ImageView
                     android:id="@+id/correctPhoneNumber"
