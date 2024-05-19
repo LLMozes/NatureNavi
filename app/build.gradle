@@ -46,6 +46,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
     implementation 'androidx.navigation:navigation-fragment:2.7.7'
     implementation 'androidx.navigation:navigation-ui:2.7.7'
+    implementation 'com.google.firebase:firebase-storage:21.0.0'
 // ez majd a google bejelentkezéshez kellhet
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
@@ -54,5 +55,7 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:33.0.0')
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    implementation 'com.google.firebase:firebase-appcheck-safetynet:16.1.2'
 
 }

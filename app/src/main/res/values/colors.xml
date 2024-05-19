@@ -2,9 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="red">#E53935</color>
-
-
-    <color name="my_primary">#FDFB8C00</color>
+    <color name="link_color">#FB8C00</color>
+    <color name="link_color_pressed">#F4511E</color>
+    <color name="red">#FF0000</color>
+    <color name="my_primary">#E3850B</color>
     <color name="my_secondary">#DC714E1A</color>
 </resources>

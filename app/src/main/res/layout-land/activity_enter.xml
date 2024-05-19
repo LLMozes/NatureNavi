@@ -1,0 +1,96 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterActivity"
+    android:background="@drawable/enter_bg">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        app:cardBackgroundColor="#D0FFFFFF"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="297dp"
+            android:layout_height="260dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="28dp"
+            android:paddingTop="15dp"
+            android:paddingRight="28dp"
+            android:paddingBottom="28dp">
+
+            <ImageView
+                android:id="@+id/center_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/kirandulo" />
+
+            <TextView
+                android:id="@+id/appname_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+
+                />
+
+            <TextView
+                android:id="@+id/main_text"
+                android:layout_width="234dp"
+                android:layout_height="43dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Fedezd fel a természetet és kapcsolj ki"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/appname_text" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/black"
+        android:onClick="goRegisterPage"
+        android:text="@string/newUser"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_card"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/my_primary"
+        android:onClick="goLoginPage"
+        android:text="@string/existing_account"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

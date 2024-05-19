@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/backButton"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:onClick="goMainPage"
         android:src="@drawable/backto"
         android:layout_marginStart="8dp"
@@ -65,15 +65,15 @@
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
-            <EditText
-                android:id="@+id/fullName_EditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:drawableEnd="@drawable/done_icon_grey"
-                android:backgroundTint="#000000"
-                android:textColor="@color/my_primary"
-                android:contentDescription="Email cím beviteli mező"/>
+
+                <EditText
+                    android:id="@+id/fullName_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:backgroundTint="#000000"
+                    android:textColor="@color/my_primary" />
+
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"/>
@@ -84,15 +84,35 @@
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
-            <EditText
-                android:id="@+id/email_EditText"
+
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:drawableEnd="@drawable/done_icon_grey"
-                android:backgroundTint="#000000"
-                android:textColor="@color/my_primary"
-                android:contentDescription="Email cím beviteli mező"/>
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/email_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="#000000"
+                    android:textColor="@color/my_primary"
+                    android:contentDescription="Email cím beviteli mező"/>
+
+                <ImageView
+                    android:id="@+id/correctEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/done_icon_grey" />
+
+            </RelativeLayout>
+
+
 
             <View
                 android:layout_width="wrap_content"
@@ -104,6 +124,10 @@
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/password_EditText"
                 android:layout_width="match_parent"
@@ -111,8 +135,22 @@
                 android:inputType="textPassword"
                 android:backgroundTint="#000000"
                 android:textColor="@color/my_primary"
-                android:drawableEnd="@drawable/password_icon"
                 android:contentDescription="Jelszó beviteli mező"/>
+
+
+                <ImageView
+                    android:id="@+id/passwordVisibilityEye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/password_icon"
+                    android:layout_marginStart="10dp"
+                    android:paddingRight="10dp"
+                    android:contentDescription="Jelszó láthatóság váltó ikon"/>
+
+            </RelativeLayout>
+
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"/>
@@ -124,6 +162,9 @@
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
                 android:id="@+id/passwordAgain_EditText"
                 android:layout_width="match_parent"
@@ -131,8 +172,20 @@
                 android:inputType="textPassword"
                 android:backgroundTint="#000000"
                 android:textColor="@color/my_primary"
-                android:drawableEnd="@drawable/done_icon_grey"
                 android:contentDescription="Jelszó beviteli mező"/>
+
+                <ImageView
+                    android:id="@+id/matchPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/done_icon_grey" />
+
+            </RelativeLayout>
 
             <View
                 android:layout_width="wrap_content"
@@ -145,6 +198,10 @@
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/phone_EditText"
                 android:layout_width="match_parent"
@@ -152,10 +209,22 @@
                 android:inputType="phone"
                 android:backgroundTint="#000000"
                 android:textColorHint="@color/material_dynamic_neutral20"
-                android:drawableEnd="@drawable/done_icon_grey"
-                android:hint="példa:06501290572"
+                android:hint="példa:06703330533"
                 android:textColor="@color/my_primary"
                 android:contentDescription="Telefonszám beviteli mező"/>
+
+                <ImageView
+                    android:id="@+id/correctPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/done_icon_grey" />
+
+            </RelativeLayout>
 
             <View
                 android:layout_width="wrap_content"
@@ -172,19 +241,13 @@
                     android:text="Regisztráció"
                     app:cornerRadius="32dp"
                     android:onClick="register"
+                    android:textColor="@color/black"
                     app:backgroundTint="@color/my_primary"/>
             </LinearLayout>
 
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ezt lehet nem fogom használni:TODO "
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
 
 
             <LinearLayout
@@ -198,7 +261,8 @@
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="5dp"
-                    android:background="@drawable/gooooooogle"/>
+                    android:background="@drawable/gooooooogle"
+                    android:onClick="registerWithGoogle"/>
 
 
             </LinearLayout>

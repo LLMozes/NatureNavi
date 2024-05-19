@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bejelntekezs_bg"
+    tools:context=".LoginActivity"
+    android:theme="@style/Base.Theme.NatureNavi">
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="goMainPage"
+        android:src="@drawable/backto"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="603dp"
+        android:layout_height="328dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="#9EFFFFFF"
+        app:cardCornerRadius="28dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="375dp"
+                android:orientation="vertical"
+                android:paddingLeft="28dp"
+                android:paddingTop="15dp"
+                android:paddingRight="28dp"
+                android:paddingBottom="28dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:text="Köszöntelek nálunk újra!"
+                    android:textColor="@color/my_primary"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jelentkezz be az adataiddal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email cím"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/emailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:contentDescription="Email cím beviteli mező"
+                        android:inputType="textEmailAddress"
+
+                        android:textColor="@color/my_primary" />
+
+                    <ImageView
+                        android:id="@+id/correctEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="Correct email ikon"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/done_icon_grey" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jelszó"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:inputType="textPassword"
+                        android:textColor="@color/my_primary" />
+
+                    <ImageView
+                        android:id="@+id/switchPasswordVisibility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/password_icon" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:onClick="login"
+                        android:text="Bejelentkezés"
+                        app:backgroundTint="@color/my_primary"
+                        app:cornerRadius="32dp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="vagy bejelentkezés ezzel: "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="12dp"
+                        android:background="@drawable/gooooooogle"
+                        android:onClick="loginWithGoogle" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/varazs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/card_view"
+        android:layout_marginBottom="78dp"
+        android:onClick="varazs"
+        android:textColor="@color/black"
+        android:text="varazs" />
+
+
+</RelativeLayout>

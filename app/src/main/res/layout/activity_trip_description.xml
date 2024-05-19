@@ -4,104 +4,189 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".TripDescriptionActivity">
 
+    <ImageView
+        android:id="@+id/descriptionImage"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-            <ImageView
-                android:id="@+id/descriptionImage"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:scaleType="centerCrop"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/bgbg"/>
+    <ImageView
+        android:id="@+id/backNyil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="goBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backto" />
 
-            <ImageView
-                android:id="@+id/backNyil"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/backto"
-                android:onClick="goBack" />
 
-            <TextView
-                android:id="@+id/TripName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="8dp"
-                android:text="Miami"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/descriptionImage" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionImage"
+        app:layout_constraintVertical_bias="0.0">
 
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/TripName"
-                app:layout_constraintStart_toEndOf="@+id/TripName"
-                app:layout_constraintTop_toTopOf="@+id/TripName"
-                app:srcCompat="@drawable/navigation_icon" />
+        <Button
+            android:id="@+id/lemondbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/red"
+            android:onClick="toCancel"
+            android:text="Lemond"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lefoglalButton"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
 
-            <TextView
-                android:id="@+id/TripePrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="68dp"
-                android:text="Price"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView8" />
+        <Button
+            android:id="@+id/lefoglalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="80dp"
+            android:onClick="toBook"
+            android:text="Lefoglal"
+            app:layout_constraintBottom_toBottomOf="@+id/lemondbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lemondbutton"
+            app:layout_constraintVertical_bias="1.0" />
 
-            <TextView
-                android:id="@+id/descriptionTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="52dp"
-                android:text="Leírás:"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/TripName" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="textMultiLine"
+            android:text="@string/text"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTitle" />
 
-            <TextView
-                android:id="@+id/description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:inputType="textMultiLine"
-                android:text="@string/text"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/descriptionTitle"
-                app:layout_constraintTop_toBottomOf="@+id/descriptionTitle" />
+        <TextView
+            android:id="@+id/descriptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Leírás:"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erkezesLabel" />
 
-            <Button
-                android:id="@+id/lefoglalButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
-                android:text="Lefoglal"
-                app:layout_constraintEnd_toEndOf="@+id/description"
-                app:layout_constraintHorizontal_bias="0.727"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/description" />
+        <TextView
+            android:id="@+id/TripePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Price"
+            android:textColor="#E53935"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/priceTextLabel"
+            app:layout_constraintStart_toEndOf="@+id/priceTextLabel"
+            app:layout_constraintTop_toTopOf="@+id/priceTextLabel"
+            app:layout_constraintVertical_bias="0.703" />
 
-            <Button
-                android:id="@+id/lemondbutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
-                android:text="Lemond"
-                app:layout_constraintEnd_toStartOf="@+id/lefoglalButton"
-                app:layout_constraintHorizontal_bias="0.508"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/description" />
+        <ImageView
+            android:id="@+id/titleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/TripName"
+            app:layout_constraintStart_toEndOf="@+id/TripName"
+            app:layout_constraintTop_toTopOf="@+id/TripName"
+            app:layout_constraintVertical_bias="0.125"
+            app:srcCompat="@drawable/navigation_icon" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/TripName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Miami"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/indulasLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Indulás:"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/priceTextLabel"
+            app:layout_constraintTop_toBottomOf="@+id/priceTextLabel" />
+
+        <TextView
+            android:id="@+id/erkezesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Visszaérkezés:"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/indulasLable"
+            app:layout_constraintTop_toBottomOf="@+id/indulasLable" />
+
+        <TextView
+            android:id="@+id/indulasText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/indulasLable"
+            app:layout_constraintStart_toEndOf="@+id/indulasLable"
+            app:layout_constraintTop_toTopOf="@+id/indulasLable"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/erkezesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/erkezesLabel"
+            app:layout_constraintStart_toEndOf="@+id/erkezesLabel"
+            app:layout_constraintTop_toTopOf="@+id/erkezesLabel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/priceTextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="Ár:"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TripName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

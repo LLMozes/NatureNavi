@@ -1,8 +1,10 @@
 package com.naturenavi.app;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -22,7 +24,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
-
         EditText emailEditText;
         EditText passwordEditText;
         ImageView switchPasswordVisibilty;
@@ -31,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         TextView forgetPassword;
 
         private GoogleSignInAccount mGoogleSignInAccount;
+
 
     private static final String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.[a-z]{2,}";
     private boolean isValidEmail(String email) {
@@ -49,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
         switchPasswordVisibilty = findViewById(R.id.switchPasswordVisibility);
         switchPasswordVisibilty.setVisibility(View.GONE); // alapjáraton ne latszodjon a szem csak ha van mar benne jelszo
         emailIcon = findViewById(R.id.correctEmail);
-        forgetPassword = findViewById(R.id.forgetPasswordText);
+
 
         //email helyességére reagáló pipa
         emailEditText.addTextChangedListener(new TextWatcher() {
@@ -128,7 +130,16 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void loginWithGoogle(View view) {
-        //TODO
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Figyelem");
+        builder.setMessage("Jelenleg ez a bejelentkezési módszer nem működik. Az applikáció karbantartás alatt áll.");
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.dismiss();
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     public void login(View view) {
@@ -170,14 +181,13 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void forgetPasswordMethod(View view) {
-         //TODO
-        // https://www.youtube.com/watch?v=UMNeeMSUZl0
+
+    public void varazs(View view) {
+        emailEditText.setText("1@gmail.com");
+        passwordEditText.setText("111111");
     }
 
 
-     // Verify user Email Address
-    // TODO
 
 
 

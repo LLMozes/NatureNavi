@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bejelntkezes_hatterkep"
+    android:background="@drawable/bejelntekezs_bg"
     tools:context=".LoginActivity"
-    android:theme="@style/Theme.NatureNavi">
+    android:theme="@style/Base.Theme.NatureNavi">
+
 
     <ImageView
         android:id="@+id/backButton"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:onClick="goMainPage"
-        android:src="@drawable/backto" />
+        android:src="@drawable/backto"
+        />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
@@ -119,7 +121,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#000000"
-                    android:contentDescription="Jelszó beviteli mező"
                     android:inputType="textPassword"
                     android:textColor="@color/my_primary" />
 
@@ -131,8 +132,7 @@
                     android:layout_centerVertical="true"
                     android:src="@drawable/password_icon"
                     android:layout_marginStart="10dp"
-                    android:paddingRight="10dp"
-                    android:contentDescription="Jelszó láthatóság váltó ikon"/>
+                    android:paddingRight="10dp"/>
 
             </RelativeLayout>
 
@@ -141,30 +141,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Emlékezz rám"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:buttonTint="@color/black"
-                    />
-
-                <TextView
-                    android:id="@+id/forgetPasswordText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Elfelejtettem a jeszót"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"
-                    android:onClick="forgetPasswordMethod"
-                    android:textColor="@color/black"/>
-
-            </RelativeLayout>
+                android:layout_height="wrap_content"/>
 
 
             <View
@@ -218,6 +195,16 @@
 
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/varazs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/card_view"
+        android:layout_marginBottom="78dp"
+        android:onClick="varazs"
+        android:textColor="@color/black"
+        android:text="varazs" />
 
 
 </RelativeLayout>

@@ -12,69 +12,82 @@
     <!-- RecycleView- hoz a dolgok ha nem felhps adatbázisba csinálom-->
 
     <string-array name="trip_names">
-        <item>Malajzia</item>
-        <item>Szeged</item>
-        <item>Miskolc PC</item>
-        <item>Paks</item>
-        <item>Eger</item>
-        <item>Duna</item>
-        <item>Tisza</item>
-        <item>Debrecen</item>
-        <item>Bükkaranyos</item>
-        <item>Mezőkövesd</item>
+        <item>Alpesi Csoda</item>
+        <item>Skóciai Kastélytúra</item>
+        <item>Toszkán Szőlőhegyek</item>
+        <item>Costa Rica Kalandtúra</item>
+        <item>Új-Zélandi Nagy Kaland</item>
+        <item>Himalája Magasságai</item>
+        <item>Marokkó Sivataga</item>
+        <item>Andok Titkai Peru</item>
+        <item>Norvég Fjordok</item>
+        <item>Írországi Zöld Túra</item>
     </string-array>
 
     <string-array name="trip_start_date">
-        <item>2024.07.19.</item>
-        <item>2024.07.19.</item>
-        <item>2024.07.19.</item>
-        <item>2024.07.19.</item>
-        <item>2024.07.19.</item>
-        <item>2024.07.19.</item>
-        <item>2024.07.19.</item>
-        <item>2024.07.19.</item>
-        <item>2024.07.19.</item>
-        <item>2024.07.19.</item>
+        <item>2024.06.25.</item>
+        <item>2024.07.09.</item>
+        <item>2024.07.01.</item>
+        <item>2024.05.28.</item>
+        <item>2024.10.18.</item>
+        <item>2024.08.30.</item>
+        <item>2024.09.19.</item>
+        <item>2024.07.05.</item>
+        <item>2024.11.10.</item>
+        <item>2024.07.23.</item>
     </string-array>
 
     <string-array name="trip_end_date">
-        <item>2024.07.28.</item>
-        <item>2024.07.28.</item>
-        <item>2024.07.28.</item>
-        <item>2024.07.28.</item>
-        <item>2024.07.28.</item>
-        <item>2024.07.28.</item>
-        <item>2024.07.28.</item>
-        <item>2024.07.28.</item>
-        <item>2024.07.28.</item>
+        <item>2024.07.03.</item>
+        <item>2024.07.14.</item>
+        <item>2024.07.07.</item>
+        <item>2024.06.04.</item>
+        <item>2024.10.25.</item>
+        <item>2024.09.05.</item>
+        <item>2024.09.24.</item>
+        <item>2024.07.13.</item>
+        <item>2024.11.15.</item>
         <item>2024.07.28.</item>
     </string-array>
 
 
     <array name="trip_images">
-        <item>@drawable/trip_picture</item>
-        <item>@drawable/trip_picture</item>
-        <item>@drawable/trip_picture</item>
-        <item>@drawable/trip_picture</item>
-        <item>@drawable/trip_picture</item>
-        <item>@drawable/trip_picture</item>
-        <item>@drawable/trip_picture</item>
-        <item>@drawable/trip_picture</item>
-        <item>@drawable/trip_picture</item>
-        <item>@drawable/trip_picture</item>
+        <item>@drawable/alpesi_csoda_picture</item>
+        <item>@drawable/skot_kastely_picture</item>
+        <item>@drawable/toszkan_szollo_picture</item>
+        <item>@drawable/costarica_picture</item>
+        <item>@drawable/new_zeland_picture</item>
+        <item>@drawable/himalaja_picture</item>
+        <item>@drawable/marocco_picture</item>
+        <item>@drawable/andok_peru_picture</item>
+        <item>@drawable/norweg_fjord_picture</item>
+        <item>@drawable/torur_ireland_picture</item>
     </array>
 
     <array name="trip_price">
+        <item>180.000Ft</item>
+        <item>210.000Ft</item>
+        <item>400.000Ft</item>
         <item>150.000Ft</item>
-        <item>150.000Ft</item>
-        <item>150.000Ft</item>
-        <item>150.000Ft</item>
-        <item>150.000Ft</item>
-        <item>150.000Ft</item>
-        <item>150.000Ft</item>
-        <item>150.000Ft</item>
-        <item>150.000Ft</item>
-        <item>150.000Ft</item>
+        <item>240.00Ft</item>
+        <item>200.000Ft</item>
+        <item>260.000Ft</item>
+        <item>230.000Ft</item>
+        <item>220.000Ft</item>
+        <item>280.000Ft</item>
+    </array>
+
+    <array name="trip_description_text">
+        <item>Fedezd fel az Alpok lenyűgöző tájait egy hétnapos túrán. A kirándulás magában foglalja a hegyi hüttékben történő alvást, naponta 5-8 órás túrákat, és egy tapasztalt túravezetőt. Készülj fel változatos időjárásra és hozz magaddal megfelelő felszerelést, mint vízálló túrabakancs, hálózsák és termálruházat.</item>
+        <item>Egy 5 napos kirándulás Skócia festői tájain keresztül, amely során meglátogatjuk a régió legjelentősebb kastélyait. Szállás helyi panziókban, szakértő helytörténész vezetésével. Ajánlott hozni esőkabátot és kényelmes túracipőt. A túra során több kisebb várost is érintünk, így a kultúra és a történelem szerelmesei is élvezni fogják.</item>
+        <item>Ez a 3 napos túra Toszkána dombjai között vezet, ahol a világhírű borok születnek. Szállás helyi agriturismo-ban, ahol az ételek és borok helyi termelésből származnak. A túra magában foglalja a szőlőültetvények és pincészetek látogatását. Alapvető fizikai felkészültség szükséges, a napi túrák 2-4 óráig tartanak.</item>
+        <item>Egy hetes kaland Costa Rica esőerdeiben, vulkánjain és partjain. A programok között szerepel canopy-túra, rafting és snorkeling. Szállás eco-lodge-okban, helyi vezetőkkel. Minden résztvevőnek szükséges a jó kondíció, valamint hozniuk kell vízálló táskát, túrabakancsot és úszóruhát.</item>
+        <item>Fedezz fel Új-Zéland legvarázslatosabb tájait egy 10 napos túrán, amely Aucklandtől Queenstownig vezet. Túraautóval és gyalogosan haladunk, érintve fjordokat, gleccsereket és esőerdőket. Szállás helyi vendégházakban, maximum 15 fős csoportokban. Hozz minden időjáráshoz megfelelő ruházatot és jó túracipőt.</item>
+        <item>Ez egy 12 napos extrém trekking túra a Himalájában, amely elvezet a Base Camp-ig és még magasabbra. Szükséges komoly fizikai felkészültség, megfelelő felszerelés, mint oxigénpalack, téli ruházat és speciális túrabakancs. Szállás alaptáborokban, kis csoportokban, tapasztalt hegymászó vezetőkkel.</item>
+        <item>Fedezd fel Marokkó varázslatos sivatagát egy 5 napos túrán. A program magában foglalja a tevegelést, sátrazást a csillagok alatt, és helyi kultúrával való ismerkedést. Hozz magaddal napvédő krémet, kalapot, és kényelmes, hosszú ujjú ruházatot a nap elleni védelem érdekében. A csoportokat helyi vezetők irányítják.</item>
+        <item>Egy 8 napos kaland, amely Cuzcotól Machu Picchuig vezet az Inka Ösvényen. Túra során megtapasztalhatod a régió történelmi és kulturális gazdagságát. Szükséges fizikai állóképesség, és hozni kell vízálló ruházatot, hálózsákot, valamint nappali hátizsákot. Szállás sátrakban és kis fogadókban.</item>
+        <item>Egy 6 napos kalandozás Norvégia lenyűgöző fjordvidékén. A túra során hajóval és gyalogosan is felfedezzük a fjordokat, vízeséseket és hegyi falvakat. Szállás kényelmes fjordparti házakban, helyi vezetőkkel, akik mélyrehatóan ismerik a területet. Ajánlott hozni réteges öltözetet a változó időjárás kezelésére.</item>
+        <item>Élvezd az ír vidék báját egy 4 napos túrán, amely Dublin környéki dombokon és réteken át vezet. A kirándulás magában foglalja a történelmi kastélyok és kertek látogatását, valamint megismerkedést az ír folklórral. Szállás helyi vendégházakban, gyalogos túrák napi 3-5 óra között.</item>
     </array>
 
 

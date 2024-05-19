@@ -3,12 +3,26 @@ package com.naturenavi.app.model;
 import java.util.List;
 
 public class User {
-    //private int profileImageResource; egyelore konstans kepe van mindenkinek
+
     private String fullName;
     private String phoneNumber;
     private String email;
 
     private List<String> bookedTripIds;
+
+    private String profileImageUrl;
+
+    public User() {
+    }
+
+
+    public String getProfileImageUrl() {
+        return profileImageUrl;
+    }
+
+    public void setProfileImageUrl(String profileImageUrl) {
+        this.profileImageUrl = profileImageUrl;
+    }
 
     public List<String> getBookedTripIds() {
         return bookedTripIds;
