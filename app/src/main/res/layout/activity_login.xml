@@ -196,15 +196,5 @@
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/varazs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/card_view"
-        android:layout_marginBottom="78dp"
-        android:onClick="varazs"
-        android:textColor="@color/black"
-        android:text="varazs" />
-
 
 </RelativeLayout>

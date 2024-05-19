@@ -182,10 +182,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    public void varazs(View view) {
-        emailEditText.setText("1@gmail.com");
-        passwordEditText.setText("111111");
-    }
+
 
 
 
