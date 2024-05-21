@@ -1,6 +1,6 @@
 # NatureNavi
 
-Nyomtam fel róla egy vidit néven: /Running Devices - NatureNavi 2024-05-22 01-43-07.mp4
+Nyomtam fel róla egy vidit néven: /Running Devices - NatureNavi 2024-05-22 01-43-07.mp4  --> view raw 
 
 gyorsabb javítás érdekében: readme.xlsx
 
